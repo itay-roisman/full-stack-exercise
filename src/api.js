@@ -16,7 +16,7 @@ export function getRandomTimestamps() {
   const end = lastSaturday.getTime();
 
   // Generate a random length for the array (between 1 and 10)
-  const randomLength = Math.floor(Math.random() * 10) + 1;
+  const randomLength = Math.floor(Math.random() * 1000) + 1;
 
   for (let i = 0; i < randomLength; i++) {
     const randomTimestamp = new Date(start + Math.random() * (end - start));
